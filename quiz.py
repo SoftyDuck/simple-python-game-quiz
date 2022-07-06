@@ -13,13 +13,15 @@ print("Lets begin!")
 time.sleep(2)
 
 # Question One
-print("Question 1:")
-print("Which game is the best game?")
-print("A: Minecraft")
-print("B = Among us")
-print("C is fortnite")
-question_1 = input("Choose one from above (A, B or C): ")
+print("""
+Question 1:
+Which game is the best game?
 
+A: Minecraft
+B: Among us
+C: fortnite
+""")
+question_1 = input("Choose one from above (A, B or C): ")
 if question_1 == "B" or "b":
     print(correct)
     score = score + 1
@@ -35,12 +37,15 @@ time.sleep(3)
 print("Question 2:")
 print("Which best describes Among Us?")
 time.sleep(2)
-print("A: an game where you have to find the imposter. You can compelete tasks. You turn into a ghost when you get "
-      "killed. If your an imposter, you have to kill everyone.")
-print("B: a happy game where everyone has fun!")
+print("""
+Question 2:
+Which best describes Among Us?
+A: an game where you have to find the imposter. You can compelete tasks. You turn into a ghost when you get killed. If your an imposter, you have to kill everyone.
+B: a happy game where everyone has fun!
+C: a shooter game.
+""")
 print("C: a shooter game.")
-question_2 = input("Choose one from above (A, B or C): ")
-
+question_2 = input("Choose one from above (A, B or C):")
 if question_2 == "A" or "a":
     print(correct)
     score = score + 1
@@ -53,14 +58,15 @@ else:
 time.sleep(3)
 
 # Question 3
-print("Question 3:")
-print("What is Minecraft?")
-time.sleep(3)
-print("A: a shooter game where you can shoot anything")
-print("B: a battle royal game simular to Fortnite")
-print("C: a simple sandbox game where you can build what you want!")
-question_3 = input("Choose one from above (A, B or C): ")
+print("""
+Question 3:
+What is Minecraft?
 
+A: a shooter game where you can shoot anything
+B: a battle royal game simular to Fortnite
+C: a simple sandbox game where you can build what you want!
+""")
+question_3 = input("Choose one from above (A, B or C): ")
 if question_3 == "C" or "c":
     print(correct)
     score = score + 1
@@ -73,32 +79,34 @@ else:
 time.sleep(3)
 
 # Question 4
-print("Question 4:")
-print("is the imposter sus?")
-time.sleep(2)
-print("A: Yes")
-print("B: No")
-question_4 = input("Choose one from above (A or B): ")
+print("""
+Question 4:
+is the imposter sus?
 
+A: Yes
+B: No
+""")
+question_4 = input("Choose one from above (A or B): ")
 if question_4 == "A" or "a":
     print(correct)
     score = score + 1
 elif question_4== "B" or "b" or "C" or "c":
         print("You got it wrong :(, I'm taking 1 point")
-    score = score - 1
+        score = score - 1
 else:
     print("Thats an invalid answer, I'm taking 1 point")
     score = score - 1
+time.sleep(3)
 
 # question 5
-print("Question 5:")
-print("Which best describes Fortnite?")
-time.sleep(3)
-print("A: a sandbox game")
-print("B: a battle royal shooter game with building.")
-print("C: a horror game")
+print("""
+Question 5:
+Which best describes Fortnite?
+A: a sandbox game
+B: a battle royal shooter game with building.
+c: a horror game.
+""")
 question_5 = input("Choose one from above (A or B): ")
-
 if question_5 == "B" or "b":
     print(correct)
     score = score + 1
